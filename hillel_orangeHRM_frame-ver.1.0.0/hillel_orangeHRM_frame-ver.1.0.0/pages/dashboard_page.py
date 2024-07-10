@@ -9,4 +9,3 @@ class DashboardPage(BasePage):
 
     DASHBOARD_PAGE = (By.XPATH, '//*[@id="app"]/div[1]/div[2]/div[2]')
 
-

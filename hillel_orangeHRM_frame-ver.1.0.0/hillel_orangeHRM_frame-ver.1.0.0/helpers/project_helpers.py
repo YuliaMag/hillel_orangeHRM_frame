@@ -21,5 +21,15 @@ def get_base_url():
     return parser['test']['base_url']
 
 
+def get_browser():
+    parser = get_parser()
+    return parser['test']['browser'].lower()
 
 
+def get_screenshot_directory():
+    parser = get_parser()
+    return parser['test']['screenshot_directory']
+
+
+# def create_screenshots_directory():
+#     os.makedirs(get_screenshot_directory(), exist_ok=True)
